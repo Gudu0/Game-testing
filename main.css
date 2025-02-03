@@ -1,4 +1,4 @@
-body{
+body {
   width: 650px;
   margin: 0 auto;
 }
@@ -11,4 +11,7 @@ canvas {
   display: block;
   margin: 0 auto;
   margin-top:50px;
+}
+h1{
+  margin: 10, auto, 10, auto;
 }
