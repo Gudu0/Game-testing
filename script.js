@@ -10,6 +10,7 @@ const paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
+let interval = 0;
 
 
 function drawBall() {
@@ -33,15 +34,25 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
   drawPaddle();
-  x += dx;
-  y += dy;
   
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
-  if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+  if (y + dy < ballRadius) {
     dy = -dy;
+  } else if (y + dy > canvas.height - ballRadius) {
+  if (x > paddleX && x < paddleX + paddleWidth) {
+    dy = -dy;
+  } else {
+    alert("GAME OVER");
+    document.location.reload();
+    clearInterval(interval);
   }
+  
+  x += dx;
+  y += dy;
+}
+
   if (rightPressed) {
     paddleX = Math.min(paddleX + 7, canvas.width - paddleWidth);
   } else if (leftPressed) {
@@ -52,7 +63,7 @@ function draw() {
 function startGame() {
   document.addEventListener("keydown", keyDownHandler, false);
   document.addEventListener("keyup", keyUpHandler, false);
-  setInterval(draw, 10);
+  interval = setInterval(draw, 10);setInterval(draw, 10);
 }
 
 function keyDownHandler(e) {
