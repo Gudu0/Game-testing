@@ -187,7 +187,7 @@ function startGame() {
   draw();
 }
 
-document.getElementById("runButton").addEventListener("click", function () {
+document.getElementById("runButton").addEventListener("click", function() {
   startGame();
   this.disabled = true;
 });
