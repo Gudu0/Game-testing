@@ -10,15 +10,14 @@ h1{
   width:200px;
   float:right;
 }
-.res1{
+.res{
   text-align:right;
   float:right;
   padding-right:5px;
-}
-p{
   display:inline-block;
 }
 .reslab{
   text-align:left;
   padding-left:5px;
+  display:inline-block;
 }
