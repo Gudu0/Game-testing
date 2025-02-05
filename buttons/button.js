@@ -19,8 +19,6 @@ function increase() {
   val1.innerHTML = res1;
 }
 function secondfunc() {
-  res1++
   res2++
-  val1.innerHTML = res1;
   val2.innerHTML = res2;
 }
