@@ -2,7 +2,6 @@ document.getElementById("testButton").addEventListener("click", function() {
   increase();
 });
 document.getElementById("button2").addEventListener("click", function() {
-  increase();
   secondfunc();
 });
 
