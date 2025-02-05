@@ -2,17 +2,12 @@ document.getElementById("testButton").addEventListener("click", function() {
   increase();
 });
 
-let progressbar = document.getElementById("testProgress");
+let res1 = 0
 let progval = document.getElementById("progval");
 
-progval.innerHTML = progressbar.value;
+progval.innerHTML = res1;
 
 function increase() {
-  progressbar.value = progressbar.value += 1;
-  progval.innerHTML = progressbar.value;
-  if (progressbar.value == progressbar.max) {
-    //new code from google search to add a slight delay to setting the value to 0, might change it later, I don't like it.
-    setTimeout(() => { progressbar.value = progressbar.max - progressbar.max; progval.innerHTML = progressbar.value; }, 100);
-    //progressbar.value = progressbar.max - progressbar.max;
-  }
+  res1++
+  progval.innerHTML = res1;
 }
