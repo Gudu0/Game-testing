@@ -14,3 +14,6 @@ h1{
   text-align:right;
   padding-right:5px;
 }
+p{
+  display:inline-block;
+}
