@@ -11,5 +11,6 @@ h1{
   float:right;
 }
 .res1{
-  
+  text-align:right;
+  padding-right:5px;
 }
