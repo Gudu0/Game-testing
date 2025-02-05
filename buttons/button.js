@@ -1,8 +1,11 @@
 document.getElementById("testButton").addEventListener("click", function() {
   increase();
 });
+
 let progressbar = document.getElementById("testProgress");
 let progval = document.getElementById("progval");
+
+progval.innerHTML = progressbar.value;
 
 function increase() {
   progressbar.value = progressbar.value += 1;
