@@ -12,6 +12,7 @@ h1{
 }
 .res1{
   text-align:right;
+  float:right;
   padding-right:5px;
 }
 p{
