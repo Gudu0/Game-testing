@@ -10,6 +10,7 @@ function increase() {
   if (progressbar.value == progressbar.max) {
     //new code from google search to add a slight delay to setting the value to 0, might change it later, I don't like it.
     setTimeout(() => { progressbar.value = progressbar.max - progressbar.max; }, 100);
+    progval.innerHTML = progressbar.value;
     //progressbar.value = progressbar.max - progressbar.max;
   }
 }
