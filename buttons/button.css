@@ -7,5 +7,6 @@ h1{
 }
 .resources{
   border: red 2px solid;
-  
+  width:300px;
+  float:right;
 }
