@@ -2,7 +2,7 @@ document.getElementById("testButton").addEventListener("click", function() {
   increase();
 });
 document.getElementById("button2").addEventListener("click", function() {
-  secondfunc();
+  tier2();
 });
 
 let res1 = 0
@@ -14,10 +14,16 @@ val1.innerHTML = res1;
 val2.innerHTML = res2;
 
 function increase() {
-  res1++
+  res1++;
   val1.innerHTML = res1;
 }
-function secondfunc() {
-  res2++
-  val2.innerHTML = res2;
+function tier2() {
+  if(res1 >= 10){
+    res1 - 10;
+    res2++;
+    val2.innerHTML = res2;
+  else{
+    
+  }
+  }
 }
