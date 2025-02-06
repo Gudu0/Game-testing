@@ -1,4 +1,4 @@
-document.getElementById("testButton").addEventListener("click", function() {
+document.getElementById("button1").addEventListener("click", function() {
   increase();
 });
 document.getElementById("button2").addEventListener("click", function() {
@@ -9,7 +9,7 @@ let res1 = 0
 let res2 = 0
 let val1 = document.getElementById("val1");
 let val2 = document.getElementById("val2");
-let but1 = document.getElementById("testButton";
+let but1 = document.getElementById("button1";
 let but2 = document.getElementById("button2";
 
 val1.innerHTML = res1;
