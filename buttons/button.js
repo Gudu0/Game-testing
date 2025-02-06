@@ -25,8 +25,5 @@ function tier2() {
     val1.innerHTML = res1;
     res2++;
     val2.innerHTML = res2;
-  else {
-    but2.style.backgroundColor = "red";
-  }
   }
 }
