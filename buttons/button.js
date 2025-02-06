@@ -22,5 +22,6 @@ function tier2() {
     res1 - 10;
     res2++;
     val2.innerHTML = res2;
+    val1.innerHTML = res1;
   }
 }
