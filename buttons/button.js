@@ -19,7 +19,7 @@ function increase() {
 }
 function tier2() {
   if(res1 >= 10){
-    res1 - 10;
+    res1 -= 10;
     val1.innerHTML = res1;
     res2++;
     val2.innerHTML = res2;
