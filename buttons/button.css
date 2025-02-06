@@ -32,12 +32,10 @@ h1{
   cursor:pointer;
   padding: 3px 5px;
 }
-.but1{
-  background-color:#4f4331;
-}
-.but2{
-  background-color:#383227;
-}
+.but1{background-color:#4f4331;}
+.but2{background-color:#383227;}
+.but3{background-color:#1c1814}
+
 .restop{
   margin-top:5px;
 }
