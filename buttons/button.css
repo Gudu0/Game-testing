@@ -21,3 +21,16 @@ h1{
   padding-left:5px;
   display:inline-block;
 }
+.button{
+  border: none;
+  color: white;
+  text-align: center;
+  cursor:pointer;
+  padding: 3px 5px;
+}
+.but1{
+  background-color:#2e271d;
+}
+.but2{
+  background-color:#1c1914;
+}
