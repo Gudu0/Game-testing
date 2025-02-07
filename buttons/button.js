@@ -3,6 +3,9 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // loads/creates save data
 // fetching past save data
+let res1 = 0;
+let res2 = 0;
+let res3 = 0;
 if (localStorage.getItem("visited") === !null){
   let res1 = Number(localStorage.getItem("res1"));
   let res1 = Number(localStorage.getItem("res1"));
