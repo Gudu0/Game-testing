@@ -1,33 +1,9 @@
-e// variable stuff
+// variable stuff
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// loads/creates save data
-// fetching past save data
 let res1 = 0;
 let res2 = 0;
 let res3 = 0;
-try {
-	if (localStorage.getItem("visited") === !null){
-  let res1 = Number(localStorage.getItem("res1"));
-  let res1 = Number(localStorage.getItem("res1"));
-  let res3 = Number(localStorage.getItem("res3"));
-	} else {
-  //creating save data
-  localStorage.setItem("visited", "true");
-  let res1 = 0;
-  let res2 = 0;
-  let res3 = 0;e
-  localStorage.setItem("res1", res1);
-  localStorage.setItem("res2", res2);
-  localStorage.setItem("res3", res3);
-	}
-}
-catch(err){
-	document.getElementById("ext1").innerHTML = err.message;
-}
-
-//calls the save function every 5 seconds
-// setInterval(save, 5000);
 
 //the 3 buttons
 document.getElementById("button1").addEventListener("click", function() {
@@ -101,13 +77,3 @@ function t3(){
   	}
   }
 }
-
-// function clrsav(){
-//   localStorage.clear();
-// }
-//saving function, saves the resource values into local storage
-// function save(){
-//   localStorage.setItem("res1", res1);
-//   localStorage.setItem("res2", res2);
-//   localStorage.setItem("res3", res3);
-// }
