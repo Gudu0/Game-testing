@@ -1,3 +1,22 @@
+//loads/creates save data
+localStorage.setItem("visited", "true");
+//fetching past save data
+if (localStorage.getItem("visited") == "true"){
+  let res1 = localStorage.getItem("res1");
+  let res1 = localStorage.getItem("res1");
+  let res3 = localStorage.getItem("res3");
+} else {
+  //creating save data
+  let res1 = 0;
+  let res2 = 0;
+  let res3 = 0;
+  localStorage.setItem("res1", res1);
+  localStorage.setItem("res2", res2);
+  localStorage.setItem("res3", res3);
+}
+//calls the save function every 5 seconds
+setInterval(save, 5000);
+
 document.getElementById("button1").addEventListener("click", function() {
   t1();
 });
@@ -19,9 +38,6 @@ document.addEventListener("keyup", function(event){
 });
 
 
-let res1 = 0;
-let res2 = 0;
-let res3 = 0;
 
 let val1 = document.getElementById("val1");
 let val2 = document.getElementById("val2");
@@ -37,6 +53,7 @@ function t1() {
   res1++;
   val1.innerHTML = res1;
 }
+
 function t2() {
   if(res1 >= 10 || shift == "true"){
     if (shift == "true"){
@@ -51,6 +68,7 @@ function t2() {
     }
   }
 }
+
 function t3(){
   if (res2>=10 || shift == "true"){
     if (shift == "true"){
@@ -64,4 +82,10 @@ function t3(){
       val3.innerHTML = res3;
     }
   }
+}
+//saving function, saves the resource values into local storage
+function save(){
+  localStorage.setItem("res1", res1);
+  localStorage.setItem("res2", res2);
+  localStorage.setItem("res3", res3);
 }
