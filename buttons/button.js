@@ -3,22 +3,22 @@
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //loads/creates save data
 //fetching past save data
-if (localStorage.getItem("visited") == "true"){
-  let res1 = localStorage.getItem("res1");
-  let res1 = localStorage.getItem("res1");
-  let res3 = localStorage.getItem("res3");
-} else {
-  //creating save data
-  localStorage.setItem("visited", "true");
-  let res1 = 0;
-  let res2 = 0;
-  let res3 = 0;
-  localStorage.setItem("res1", res1);
-  localStorage.setItem("res2", res2);
-  localStorage.setItem("res3", res3);
-}
-//calls the save function every 5 seconds
-setInterval(save, 5000);
+// if (localStorage.getItem("visited") == "true"){
+//   let res1 = localStorage.getItem("res1");
+//   let res1 = localStorage.getItem("res1");
+//   let res3 = localStorage.getItem("res3");
+// } else {
+//   //creating save data
+//   localStorage.setItem("visited", "true");
+//   let res1 = 0;
+//   let res2 = 0;
+//   let res3 = 0;
+//   localStorage.setItem("res1", res1);
+//   localStorage.setItem("res2", res2);
+//   localStorage.setItem("res3", res3);
+// }
+// //calls the save function every 5 seconds
+// setInterval(save, 5000);
 
 //the 3 buttons
 document.getElementById("button1").addEventListener("click", t1());
@@ -84,12 +84,12 @@ function t3(){
   }
 }
 
-function clrsav(){
-  localStorage.clear();
-}
+// function clrsav(){
+//   localStorage.clear();
+// }
 //saving function, saves the resource values into local storage
-function save(){
-  localStorage.setItem("res1", res1);
-  localStorage.setItem("res2", res2);
-  localStorage.setItem("res3", res3);
-}
+// function save(){
+//   localStorage.setItem("res1", res1);
+//   localStorage.setItem("res2", res2);
+//   localStorage.setItem("res3", res3);
+// }
