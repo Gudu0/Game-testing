@@ -1,3 +1,4 @@
+localStorage.setItem("visited", "false");
 // variable stuff
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -7,7 +8,7 @@ if (localStorage.getItem("visited") == "true"){
   let res1 = Number(localStorage.getItem("res1"));
   let res1 = Number(localStorage.getItem("res1"));
   let res3 = Number(localStorage.getItem("res3"));
-} else {
+} else if (localStorage.getItem("visited" == "false"){
   //creating save data
   localStorage.setItem("visited", "true");
   let res1 = 0;
