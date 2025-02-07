@@ -21,9 +21,15 @@
 // setInterval(save, 5000);
 
 //the 3 buttons
-document.getElementById("button1").addEventListener("click", t1());
-document.getElementById("button2").addEventListener("click", t2());
-document.getElementById("button3").addEventListener("click", t3());
+document.getElementById("button1").addEventListener("click", function() {
+  t1();
+});
+document.getElementById("button2").addEventListener("click", function() {
+  t2();
+});
+document.getElementById("button3").addEventListener("click", function() {
+  t3();
+});
 // document.getElementById("clearbut").addEventListener("click", clrsav());
 
 document.addEventListener("keydown", function(event){
