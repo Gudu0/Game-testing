@@ -39,10 +39,16 @@ function t1() {
 }
 function t2() {
   if(res1 >= 10 || shift == "true"){
-    res1 -= 10;
-    val1.innerHTML = res1;
-    res2++;
-    val2.innerHTML = res2;
+    if (shift == "true"){
+      val1.innerHTML = res1;
+      res2++;
+      val2.innerHTML = res2;
+    } else {
+      res1 -= 10;
+      val1.innerHTML = res1;
+      res2++;
+      val2.innerHTML = res2;
+    }
   }
 }
 function t3(){
