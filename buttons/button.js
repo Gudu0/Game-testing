@@ -1,4 +1,4 @@
-// variable stuff
+e// variable stuff
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // loads/creates save data
@@ -6,20 +6,26 @@
 let res1 = 0;
 let res2 = 0;
 let res3 = 0;
-// if (localStorage.getItem("visited") === !null){
-//   let res1 = Number(localStorage.getItem("res1"));
-//   let res1 = Number(localStorage.getItem("res1"));
-//   let res3 = Number(localStorage.getItem("res3"));
-// } else {
-//   //creating save data
-//   localStorage.setItem("visited", "true");
-//   let res1 = 0;
-//   let res2 = 0;
-//   let res3 = 0;
-//   localStorage.setItem("res1", res1);
-//   localStorage.setItem("res2", res2);
-//   localStorage.setItem("res3", res3);
-// }
+try {
+	if (localStorage.getItem("visited") === !null){
+  let res1 = Number(localStorage.getItem("res1"));
+  let res1 = Number(localStorage.getItem("res1"));
+  let res3 = Number(localStorage.getItem("res3"));
+	} else {
+  //creating save data
+  localStorage.setItem("visited", "true");
+  let res1 = 0;
+  let res2 = 0;
+  let res3 = 0;e
+  localStorage.setItem("res1", res1);
+  localStorage.setItem("res2", res2);
+  localStorage.setItem("res3", res3);
+	}
+}
+catch(err){
+	document.getElementById("ext1").innerHTML = err.message;
+}
+
 //calls the save function every 5 seconds
 // setInterval(save, 5000);
 
