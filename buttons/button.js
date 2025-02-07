@@ -94,9 +94,9 @@ function t3(){
   }
 }
 
-// function clrsav(){
-//   localStorage.clear();
-// }
+function clrsav(){
+  localStorage.clear();
+}
 // saving function, saves the resource values into local storage
 // function save(){
 //   localStorage.setItem("res1", res1);
