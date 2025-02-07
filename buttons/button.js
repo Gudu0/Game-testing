@@ -6,20 +6,21 @@
 let res1 = 0;
 let res2 = 0;
 let res3 = 0;
-// if (localStorage.getItem("visited") === !null){
-//   let res1 = Number(localStorage.getItem("res1"));
-//   let res1 = Number(localStorage.getItem("res1"));
-//   let res3 = Number(localStorage.getItem("res3"));
-// } else {
-//   //creating save data
-//   localStorage.setItem("visited", "true");
-//   let res1 = 0;
-//   let res2 = 0;
-//   let res3 = 0;
-//   localStorage.setItem("res1", res1);
-//   localStorage.setItem("res2", res2);
-//   localStorage.setItem("res3", res3);
-// }
+
+if (localStorage.visited){
+  let res1 = Number(localStorage.res1);
+  let res2 = Number(localStorage.res2);
+  let res3 = Number(localStorage.res3);
+} else {
+  //creating save data
+  localStorage.visited = true;
+  // let res1 = 0;
+  // let res2 = 0;
+  // let res3 = 0;
+  localStorage.res1 = res1);
+  localStorage.res2 = res2);
+  localStorage.res3 = res3);
+}
 //calls the save function every 5 seconds
 setInterval(save, 5000);
 
