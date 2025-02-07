@@ -38,7 +38,7 @@ function t1() {
   val1.innerHTML = res1;
 }
 function t2() {
-  if(res1 >= 10){
+  if(res1 >= 10 || shift == "true"){
     res1 -= 10;
     val1.innerHTML = res1;
     res2++;
@@ -46,7 +46,7 @@ function t2() {
   }
 }
 function t3(){
-  if (res2>=10){
+  if (res2>=10 || shift == "true"){
     res2 -= 10;
     val2.innerHTML = res2;
     res3++;
