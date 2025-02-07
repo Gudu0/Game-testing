@@ -47,19 +47,15 @@ function t2() {
 }
 function t3(){
   if (res2>=10 || shift == "true"){
-    res2 -= 10;
-    val2.innerHTML = res2;
-    res3++;
-    val3.innerHTML = res3;
+    if (shift == "true"){
+      val2.innerHTML = res2;
+      res3++;
+      val3.innerHTML = res3;
+    } else {
+      res2 -= 10;
+      val2.innerHTML = res2;
+      res3++;
+      val3.innerHTML = res3;
+    }
   }
 }
-// function keyenable(){
-//   if (event.shiftKey == true){
-//     shift = "true";
-//   }
-// }
-// function keydisable(){
-//   if (event.shiftKey == true){
-//     shift = "false";
-//   }
-// }
