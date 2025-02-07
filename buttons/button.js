@@ -4,15 +4,15 @@
 //loads/creates save data
 //fetching past save data
 // if (localStorage.getItem("visited") == "true"){
-//   let res1 = localStorage.getItem("res1");
-//   let res1 = localStorage.getItem("res1");
-//   let res3 = localStorage.getItem("res3");
+//   let res1 = Number(localStorage.getItem("res1"));
+//   let res1 = Number(localStorage.getItem("res1"));
+//   let res3 = Number(localStorage.getItem("res3"));
 // } else {
 //   //creating save data
 //   localStorage.setItem("visited", "true");
-//   let res1 = 0;
-//   let res2 = 0;
-//   let res3 = 0;
+  let res1 = 0;
+  let res2 = 0;
+  let res3 = 0;
 //   localStorage.setItem("res1", res1);
 //   localStorage.setItem("res2", res2);
 //   localStorage.setItem("res3", res3);
