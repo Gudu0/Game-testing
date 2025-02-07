@@ -11,9 +11,9 @@
 // } else if (localStorage.getItem("visited" == "false"){
   //creating save data
   // localStorage.setItem("visited", "true");
-  // let res1 = 0;
-  // let res2 = 0;
-  // let res3 = 0;
+  let res1 = 0;
+  let res2 = 0;
+  let res3 = 0;
   // localStorage.setItem("res1", res1);
   // localStorage.setItem("res2", res2);
   // localStorage.setItem("res3", res3);
