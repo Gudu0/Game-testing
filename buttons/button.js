@@ -49,13 +49,13 @@ function t1() {
 }
 
 function t2() {
-  if(res1 >= 10 || shift == "true"){
+  if(res1 >= 9 || shift == "true"){
   	if (shift == "true"){
     	val1.innerHTML = res1;
     	res2++;
     	val2.innerHTML = res2;
     } else {
-    	res1 -= 10;
+    	res1 -= 9;
     	val1.innerHTML = res1;
     	res2++;
     	val2.innerHTML = res2;
@@ -64,13 +64,13 @@ function t2() {
 }
 
 function t3(){
-  if (res2>=10 || shift == "true"){
+  if (res2>=9 || shift == "true"){
   	if (shift == "true"){
     	val2.innerHTML = res2;
     	res3++;
     	val3.innerHTML = res3;
   	} else {
-    	res2 -= 10;
+    	res2 -= 9;
     	val2.innerHTML = res2;
     	res3++;
     	val3.innerHTML = res3;
