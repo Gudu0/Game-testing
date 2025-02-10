@@ -5,7 +5,7 @@ let res1 = 0;
 let res2 = 0;
 let res3 = 0;
 
-//the 3 buttons
+//the buttons
 document.getElementById("button1").addEventListener("click", function() {
   t1();
 });
@@ -15,10 +15,9 @@ document.getElementById("button2").addEventListener("click", function() {
 document.getElementById("button3").addEventListener("click", function() {
   t3();
 });
-// document.getElementById("clrsav").addEventListener("click", function() {
-//   clrsav();
-// });
-// document.getElementById("clearbut").addEventListener("click", clrsav());
+document.getElementById("tgwg").addEventListener("click", function() {
+  tgwg();
+});
 
 document.addEventListener("keydown", function(event){
   if (event.shiftKey == true){
@@ -34,6 +33,8 @@ document.addEventListener("keyup", function(event){
 let val1 = document.getElementById("val1");
 let val2 = document.getElementById("val2");
 let val3 = document.getElementById("val3");
+//ToGgle Wood Gen Check Box
+let tgwgcb = document.getElementById("tgwg");
 
 val1.innerHTML = res1;
 val2.innerHTML = res2;
@@ -76,4 +77,13 @@ function t3(){
     	val3.innerHTML = res3;
   	}
   }
+}
+
+function tgwg(){
+	if (tgwgcb.checked == true){
+		//Woof 1 Gen
+		let w1g = setInterval(t1(), 1000);
+	} else {
+		clearInterval(w1g);
+	}
 }
