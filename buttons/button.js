@@ -81,8 +81,7 @@ function t3(){
 
 function woodGen(){
 	if (woodGenCB.checked == true){
-		//Wood 1 Gen
-		let woodGenON = setInterval(t1, 1000);
+		woodGenON = setInterval(t1, 1000);
 	} else {
 		clearInterval(woodGenON);
 	}
