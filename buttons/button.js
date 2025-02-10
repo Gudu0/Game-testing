@@ -83,7 +83,7 @@ function tgwg(){
 	if (tgwgcb.checked == true){
 		//Woof 1 Gen
 		let w1g = setInterval(t1(), 1000);
-	} else if(tgwgcb.checked == false){
-		clearInterval(w1g);
+	// } else if(tgwgcb.checked == false){
+	// 	clearInterval(w1g);
 	}
 }
