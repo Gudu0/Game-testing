@@ -74,7 +74,7 @@ function t1() {
 }
 
 function t2() {
-  if(wood >= 9 || shift == "true"){
+  if(wood >= 9 || shift == "true" || sturdyGenCB.checked == true && sturdygenbought == true){
   	if (shift == "true"){
     	val1.innerHTML = wood;
     	sturdyWood++;
@@ -89,7 +89,7 @@ function t2() {
 }
 
 function t3(){
-  if (sturdyWood>=9 || shift == "true"){
+  if (sturdyWood>=9 || shift == "true" || denseGenCB.checked == true && sturdygenbought == true){
   	if (shift == "true"){
     	val2.innerHTML = sturdyWood;
     	denseWood++;
