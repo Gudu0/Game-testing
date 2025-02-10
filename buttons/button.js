@@ -5,6 +5,11 @@ let wood = 0;
 let sturdyWood = 0;
 let denseWood = 0;
 let WoodGenIntervalON;
+let SturdyGenIntervalON;
+let DenseGenIntervalON;
+let woodgenbought = false;
+let sturdygenbought = false;
+let densegenbought = false;
 
 //the buttons
 document.getElementById("button1").addEventListener("click", function() {
@@ -16,10 +21,26 @@ document.getElementById("button2").addEventListener("click", function() {
 document.getElementById("button3").addEventListener("click", function() {
   t3();
 });
-document.getElementById("tgwg").addEventListener("click", function() {
+document.getElementById("woodgen").addEventListener("click", function() {
   woodGen();
 });
+document.getElementById("sturdygen").addEventListener("click", function() {
+  sturdyGen();
+});
+document.getElementById("densegen").addEventListener("click", function() {
+  denseGen();
+});
+document.getElementById("buywoodgen").addEventListener("click", function() {
+  buyWoodGen();
+});
+document.getElementById("buysturdygen").addEventListener("click", function() {
+  buySturdyGen();
+});
+document.getElementById("buydensegen").addEventListener("click", function() {
+  buyDenseGen();
+});
 
+//key listeners
 document.addEventListener("keydown", function(event){
   if (event.shiftKey == true){
 	shift = "true";
@@ -35,7 +56,9 @@ let val1 = document.getElementById("val1");
 let val2 = document.getElementById("val2");
 let val3 = document.getElementById("val3");
 
-let woodGenCB = document.getElementById("tgwg");
+let woodGenCB = document.getElementById("woodgen");
+let sturdyGenCB = document.getElementById("sturdygen");
+let denseGenCB = document.getElementById("densegen");
 
 val1.innerHTML = wood;
 val2.innerHTML = sturdyWood;
@@ -79,11 +102,48 @@ function t3(){
   	}
   }
 }
-
+//idea for making file smaller, use string concatenation on variable names becauae I use the same scheme on all of them.
 function woodGen(){
-	if (woodGenCB.checked == true){
+	if (woodGenCB.checked == true && woodgenbought == true){
 		WoodGenIntervalON = setInterval(t1, 1000);
 	} else {
 		clearInterval(WoodGenIntervalON);
+	}
+}
+
+function sturdyGen(){
+	if (sturdyGenCB.checked == true && sturdygenbought == true){
+		SturdyGenIntervalON = setInterval(t2, 1000);
+	} else {
+		clearInterval(SturdyGenIntervalON);
+	}
+}
+
+function denseGen(){
+	if (denseGenCB.checked == true && densegenbought == true){
+		DenseGenIntervalON = setInterval(t3, 1000);
+	} else {
+		clearInterval(DenseGenIntervalON);
+	}
+}
+
+function buyWoodGen(){
+	if wood >= 10{
+		wood -= 10;
+		woodgenbought = true;
+	}
+}
+
+function buySturdyGen(){
+	if sturdyWood >= 10{
+		sturdyWood -= 10;
+		sturdygenbought = true;
+	}
+}
+
+function buyDenseGen(){
+	if denseWood >= 10{
+		denseWood -= 10;
+		densegenbought = true;
 	}
 }
