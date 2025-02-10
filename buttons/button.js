@@ -74,12 +74,9 @@ function t1() {
 }
 
 function t2() {
-  if(wood >= 9 || shift == "true" || sturdyGenCB.checked == true && sturdygenbought == true){
+  if(wood >= 9 || shift == "true"){
   	if (shift == "true"){
     	val1.innerHTML = wood;
-    	sturdyWood++;
-    	val2.innerHTML = sturdyWood;
-    } else if(sturdyGenCB.checked == true && sturdygenbought == true){
     	sturdyWood++;
     	val2.innerHTML = sturdyWood;
   	} else {
@@ -92,12 +89,9 @@ function t2() {
 }
 
 function t3(){
-  if (sturdyWood>=9 || shift == "true" || denseGenCB.checked == true && sturdygenbought == true){
+  if (sturdyWood>=9 || shift == "true"){
   	if (shift == "true"){
     	val2.innerHTML = sturdyWood;
-    	denseWood++;
-    	val3.innerHTML = denseWood;
-  	} else if (denseGenCB.checked == true && sturdygenbought == true){
     	denseWood++;
     	val3.innerHTML = denseWood;
   	} else {
@@ -111,28 +105,37 @@ function t3(){
 //idea for making file smaller, use string concatenation on variable names becauae I use the same scheme on all of them.
 function woodGen(){
 	if (woodGenCB.checked == true && woodgenbought == true){
-		WoodGenIntervalON = setInterval(t1, 1000);
+		WoodGenIntervalON = setInterval(t1_1, 1000);
 	} else {
 		clearInterval(WoodGenIntervalON);
 	}
 }
-
+function t1_1(){
+  wood++;
+  val1.innerHTML = wood;
+}
 function sturdyGen(){
 	if (sturdyGenCB.checked == true && sturdygenbought == true){
-		SturdyGenIntervalON = setInterval(t2, 1000);
+		SturdyGenIntervalON = setInterval(t2_1, 1000);
 	} else {
 		clearInterval(SturdyGenIntervalON);
 	}
 }
-
+function t2_1(){
+	sturdyWood++;
+	val2.innerHTML = sturdyWood;
+}
 function denseGen(){
 	if (denseGenCB.checked == true && densegenbought == true){
-		DenseGenIntervalON = setInterval(t3, 1000);
+		DenseGenIntervalON = setInterval(t3_1, 1000);
 	} else {
 		clearInterval(DenseGenIntervalON);
 	}
 }
-
+function t3_1(){
+	denseWood++;
+  val3.innerHTML = denseWood
+}
 function buyWoodGen(){
  if (wood >= 10){
 		wood -= 10;
