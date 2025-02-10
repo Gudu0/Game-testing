@@ -128,9 +128,7 @@ function denseGen(){
 }
 
 function buyWoodGen(){
-	if (woodgenbought == true){
-		break buyWoodGen;
-	} else if (wood >= 10){
+ if (wood >= 10){
 		wood -= 10;
 		woodgenbought = true;
 		woodGenCB.checked = true;
@@ -139,9 +137,7 @@ function buyWoodGen(){
 }
 
 function buySturdyGen(){
-	if (sturdygenbought == true){
-		break buySturdyGen;
-	} else if (sturdyWood >= 10){
+	if (sturdyWood >= 10){
 		sturdyWood -= 10;
 		sturdygenbought = true;
 		sturdyGenCB.checked = true;
@@ -150,9 +146,7 @@ function buySturdyGen(){
 }
 
 function buyDenseGen(){
-	if (densegenbought == true){
-		break buyDenseGen;
-	} else if (denseWood >= 10){
+	if (denseWood >= 10){
 		denseWood -= 10;
 		densegenbought = true;
 		denseGenCB.checked = true;
