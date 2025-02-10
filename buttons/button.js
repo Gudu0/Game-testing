@@ -142,7 +142,7 @@ function buyWoodGen(){
 		woodgenbought = true;
 		woodGenCB.checked = true;
 		woodGen()
-	  buywoodgen.disable = true;
+	  buywoodgen.remove();
 	}
 }
 
@@ -152,7 +152,7 @@ function buySturdyGen(){
 		sturdygenbought = true;
 		sturdyGenCB.checked = true;
 		sturdyGen();
-		buysturdygen.disable = true;
+		buysturdygen.remove();
 	}
 }
 
@@ -162,6 +162,6 @@ function buyDenseGen(){
 		densegenbought = true;
 		denseGenCB.checked = true;
 		denseGen();
-		buydensegen.disable = true;
+		buydensegen.remove();
 	}
 }
