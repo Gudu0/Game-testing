@@ -7,9 +7,9 @@ let denseWood = 0;
 let WoodGenIntervalON;
 let SturdyGenIntervalON;
 let DenseGenIntervalON;
-let woodgenbought = false;
-let sturdygenbought = false;
-let densegenbought = false;
+// let woodgenbought = false;
+// let sturdygenbought = false;
+// let densegenbought = false;
 
 //the buttons
 document.getElementById("button1").addEventListener("click", function() {
@@ -30,15 +30,15 @@ document.getElementById("sturdygen").addEventListener("click", function() {
 document.getElementById("densegen").addEventListener("click", function() {
   denseGen();
 });
-document.getElementById("buywoodgen").addEventListener("click", function() {
-  buyWoodGen();
-});
-document.getElementById("buysturdygen").addEventListener("click", function() {
-  buySturdyGen();
-});
-document.getElementById("buydensegen").addEventListener("click", function() {
-  buyDenseGen();
-});
+// document.getElementById("buywoodgen").addEventListener("click", function() {
+//   buyWoodGen();
+// });
+// document.getElementById("buysturdygen").addEventListener("click", function() {
+//   buySturdyGen();
+// });
+// document.getElementById("buydensegen").addEventListener("click", function() {
+//   buyDenseGen();
+// });
 
 //key listeners
 document.addEventListener("keydown", function(event){
@@ -127,23 +127,23 @@ function denseGen(){
 	}
 }
 
-function buyWoodGen(){
-	if wood >= 10{
-		wood -= 10;
-		woodgenbought = true;
-	}
-}
+// function buyWoodGen(){
+// 	if wood >= 10{
+// 		wood -= 10;
+// 		woodgenbought = true;
+// 	}
+// }
 
-function buySturdyGen(){
-	if sturdyWood >= 10{
-		sturdyWood -= 10;
-		sturdygenbought = true;
-	}
-}
+// function buySturdyGen(){
+// 	if sturdyWood >= 10{
+// 		sturdyWood -= 10;
+// 		sturdygenbought = true;
+// 	}
+// }
 
-function buyDenseGen(){
-	if denseWood >= 10{
-		denseWood -= 10;
-		densegenbought = true;
-	}
-}
+// function buyDenseGen(){
+// 	if denseWood >= 10{
+// 		denseWood -= 10;
+// 		densegenbought = true;
+// 	}
+// }
