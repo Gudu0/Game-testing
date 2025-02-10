@@ -127,23 +127,23 @@ function denseGen(){
 	}
 }
 
-// function buyWoodGen(){
-// 	if wood >= 10{
-// 		wood -= 10;
-// 		woodgenbought = true;
-// 	}
-// }
+function buyWoodGen(){
+	if (wood >= 10){
+		wood -= 10;
+		woodgenbought = true;
+	}
+}
 
-// function buySturdyGen(){
-// 	if sturdyWood >= 10{
-// 		sturdyWood -= 10;
-// 		sturdygenbought = true;
-// 	}
-// }
+function buySturdyGen(){
+	if (sturdyWood >= 10){
+		sturdyWood -= 10;
+		sturdygenbought = true;
+	}
+}
 
-// function buyDenseGen(){
-// 	if denseWood >= 10{
-// 		denseWood -= 10;
-// 		densegenbought = true;
-// 	}
-// }
+function buyDenseGen(){
+	if (denseWood >= 10){
+		denseWood -= 10;
+		densegenbought = true;
+	}
+}
