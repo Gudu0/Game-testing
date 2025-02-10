@@ -1,9 +1,9 @@
 // variable stuff
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-let res1 = 0;
-let res2 = 0;
-let res3 = 0;
+let wood = 0;
+let sturdyWood = 0;
+let denseWood = 0;
 
 //the buttons
 document.getElementById("button1").addEventListener("click", function() {
@@ -16,7 +16,7 @@ document.getElementById("button3").addEventListener("click", function() {
   t3();
 });
 document.getElementById("tgwg").addEventListener("click", function() {
-  tgwg();
+  woodGen();
 });
 
 document.addEventListener("keydown", function(event){
@@ -33,57 +33,57 @@ document.addEventListener("keyup", function(event){
 let val1 = document.getElementById("val1");
 let val2 = document.getElementById("val2");
 let val3 = document.getElementById("val3");
-//ToGgle Wood Gen Check Box
-let tgwgcb = document.getElementById("tgwg");
 
-val1.innerHTML = res1;
-val2.innerHTML = res2;
-val3.innerHTML = res3;
+let woodGenCB = document.getElementById("tgwg");
+
+val1.innerHTML = wood;
+val2.innerHTML = sturdyWood;
+val3.innerHTML = denseWood;
 
 let shift = "false";
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //functions
 function t1() {
-  res1++;
-  val1.innerHTML = res1;
+  wood++;
+  val1.innerHTML = wood;
 }
 
 function t2() {
-  if(res1 >= 9 || shift == "true"){
+  if(wood >= 9 || shift == "true"){
   	if (shift == "true"){
-    	val1.innerHTML = res1;
-    	res2++;
-    	val2.innerHTML = res2;
+    	val1.innerHTML = wood;
+    	sturdyWood++;
+    	val2.innerHTML = sturdyWood;
     } else {
-    	res1 -= 9;
-    	val1.innerHTML = res1;
-    	res2++;
-    	val2.innerHTML = res2;
+    	wood -= 9;
+    	val1.innerHTML = wood;
+    	sturdyWood++;
+    	val2.innerHTML = sturdyWood;
   	}
   }
 }
 
 function t3(){
-  if (res2>=9 || shift == "true"){
+  if (sturdyWood>=9 || shift == "true"){
   	if (shift == "true"){
-    	val2.innerHTML = res2;
-    	res3++;
-    	val3.innerHTML = res3;
+    	val2.innerHTML = sturdyWood;
+    	denseWood++;
+    	val3.innerHTML = denseWood;
   	} else {
-    	res2 -= 9;
-    	val2.innerHTML = res2;
-    	res3++;
-    	val3.innerHTML = res3;
+    	sturdyWood -= 9;
+    	val2.innerHTML = sturdyWood;
+    	denseWood++;
+    	val3.innerHTML = denseWood;
   	}
   }
 }
 
-function tgwg(){
-	if (tgwgcb.checked == true){
+function woodGen(){
+	if (woodGenCB.checked == true){
 		//Wood 1 Gen
-		let w1g = setInterval(t1, 1000);
+		let woodGenON = setInterval(t1, 1000);
 	} else {
-		clearInterval(w1g);
+		clearInterval(woodGenON);
 	}
 }
