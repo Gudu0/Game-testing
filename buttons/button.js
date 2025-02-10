@@ -79,12 +79,15 @@ function t2() {
     	val1.innerHTML = wood;
     	sturdyWood++;
     	val2.innerHTML = sturdyWood;
-    } else {
-    	wood -= 9;
+    } else if(sturdyGenCB.checked == true && sturdygenbought == true){
+    	sturdyWood++;
+    	val2.innerHTML = sturdyWood;
+  	} else {
+			wood -= 9;
     	val1.innerHTML = wood;
     	sturdyWood++;
     	val2.innerHTML = sturdyWood;
-  	}
+		}
   }
 }
 
@@ -94,12 +97,15 @@ function t3(){
     	val2.innerHTML = sturdyWood;
     	denseWood++;
     	val3.innerHTML = denseWood;
+  	} else if (denseGenCB.checked == true && sturdygenbought == true){
+    	denseWood++;
+    	val3.innerHTML = denseWood;
   	} else {
-    	sturdyWood -= 9;
+			sturdyWood -= 9;
     	val2.innerHTML = sturdyWood;
     	denseWood++;
     	val3.innerHTML = denseWood;
-  	}
+		}
   }
 }
 //idea for making file smaller, use string concatenation on variable names becauae I use the same scheme on all of them.
