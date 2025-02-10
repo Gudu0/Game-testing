@@ -6,9 +6,11 @@ h1{
   margin-top:20px;
 }
 .resources{
-  border: red 2px solid;
+  border:2px solid #615d5f;
+  background-color:#615d5f;
   width:200px;
   float:right;
+  color:#e6e6e6;
 }
 .res{
   text-align:right;
@@ -32,10 +34,10 @@ h1{
   cursor:pointer;
   padding: 3px 5px;
 }
-.but1{background-color:#4f4331;}
-.but2{background-color:#383227;}
-.but3{background-color:#1c1814}
+.wbut{background-color:#4f4331;}
+.sbut{background-color:#383227;}
+.dbut{background-color:#1c1814;}
 
 .restop{
-  margin-top:5px;
+  margin-top:2px;
 }
