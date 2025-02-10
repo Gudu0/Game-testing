@@ -4,6 +4,7 @@
 let wood = 0;
 let sturdyWood = 0;
 let denseWood = 0;
+let WoodgenIntervalON;
 
 //the buttons
 document.getElementById("button1").addEventListener("click", function() {
@@ -81,8 +82,8 @@ function t3(){
 
 function woodGen(){
 	if (woodGenCB.checked == true){
-		woodGenON = setInterval(t1, 1000);
+		WoodgenIntervalON = setInterval(t1, 1000);
 	} else {
-		clearInterval(woodGenON);
+		clearInterval(WoodgenIntervalON;
 	}
 }
