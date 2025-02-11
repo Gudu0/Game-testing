@@ -154,6 +154,7 @@ function buySturdyGen(){
 		sturdyGenCB.checked = true;
 		sturdyGen();
 		buysturdygen.remove();
+		sturdygenCB.style.display = "inline-block";
 	}
 }
 
@@ -164,5 +165,6 @@ function buyDenseGen(){
 		denseGenCB.checked = true;
 		denseGen();
 		buydensegen.remove();
+		densegenCB.style.display = "inline-block";
 	}
 }
