@@ -143,7 +143,7 @@ function buyWoodGen(){
 		woodGenCB.checked = true;
 		woodGen()
 	  buywoodgen.remove();
-	 	woodgen.style.display = "inline-block";
+	 	woodGenCB.style.display = "inline-block";
 	}
 }
 
