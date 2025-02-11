@@ -134,7 +134,7 @@ function denseGen(){
 }
 function t3_1(){
 	denseWood++;
-  val3.innerHTML = denseWood
+  val3.innerHTML = denseWood;
 }
 function buyWoodGen(){
  if (wood >= 10){
