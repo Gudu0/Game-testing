@@ -59,6 +59,9 @@ let val3 = document.getElementById("val3");
 let woodGenCB = document.getElementById("woodgen");
 let sturdyGenCB = document.getElementById("sturdygen");
 let denseGenCB = document.getElementById("densegen");
+let woodGenLB = document.getElementById("woodgenlb");
+let sturdyGenLB = document.getElementById("sturdygenlb");
+let denseGenLB = document.getElementById("densegenlb");
 
 val1.innerHTML = wood;
 val2.innerHTML = sturdyWood;
@@ -150,6 +153,7 @@ function buyWoodGen() {
     woodGen()
     buywoodgen.remove();
     woodGenCB.style.display = "inline-block";
+    woodGenLB.style.display = "inline-block";
   }
 }
 
@@ -160,7 +164,8 @@ function buySturdyGen() {
     sturdyGenCB.checked = true;
     sturdyGen();
     buysturdygen.remove();
-    sturdygenCB.style.display = "inline-block";
+    sturdyGenCB.style.display = "inline-block";
+    sturdyGenLB.style.display = "inline-block";
   }
 }
 
@@ -171,6 +176,7 @@ function buyDenseGen() {
     denseGenCB.checked = true;
     denseGen();
     buydensegen.remove();
-    densegenCB.style.display = "inline-block";
+    denseGenCB.style.display = "inline-block";
+    woodGenLB.style.display = "inline-block";
   }
 }
