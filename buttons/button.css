@@ -43,6 +43,7 @@ h1{
 }
 .cbb{
   display:none;
+  width: 200px;
 }
 .shop{
   float:right;
