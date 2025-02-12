@@ -177,6 +177,6 @@ function buyDenseGen() {
     denseGen();
     buydensegen.remove();
     denseGenCB.style.display = "inline-block";
-    woodGenLB.style.display = "inline-block";
+    denseGenLB.style.display = "inline-block";
   }
 }
