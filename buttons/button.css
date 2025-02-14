@@ -1,5 +1,6 @@
 body{
   background-color: #8a8588;
+  width:100%;
 }
 h1{
   text-align:center;
@@ -46,7 +47,8 @@ h1{
   width: 200px;
 }
 .shop{
-  float:right;
   border:2px solid black;
   display:block;
+  position:absolute;
+  right:5px;
 }
