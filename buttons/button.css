@@ -5,6 +5,9 @@ h1{
   text-align:center;
   margin-top:20px;
 }
+div{
+  border:2px dashed blue;
+}
 .page{
 /*   position:absolute; */
 }
