@@ -8,36 +8,38 @@
   <body>
     <a target="_blank" href="https://github.com/Gudu0/Game-testing">Github link</a>
     <h1>Buttons</h1>
-    <button type="button" class="button wbut" id="button1">Wood</button>
-    <button type="button" class="button sbut" id="button2">Sturdy Wood</button>
-    <button type="button" class="button dbut" id="button3">Dense Wood</button>
-    <input type="checkbox" class="cbb" id="woodgen"></input>
-    <label for="woodgen" class="cbb" id="woodgenlb">Toggle Wood Gen</label><br>
-    <input type="checkbox" class="cbb" id="sturdygen"></input>
-    <label for="sturdygen" class="cbb" id="sturdygenlb">Toggle Sturdy Gen</label><br>
-    <input type="checkbox" class="cbb" id="densegen"></input>
-    <label for="densegen" class="cbb" id="densegenlb">Toggle Dense Gen</label>
-
-    
-<!--     <button type="button" id="clrsav">Clear Save</button> -->
-    <div class="resources">
-      <p class="reslab restop" >Wood</p><p class="res restop" id="val1">0</p><br>
-      <p class="reslab" >Sturdy Wood</p><p class="res" id="val2">0</p><br>
-      <p class="reslab" >Dense Wood</p><p class="res" id="val3">0</p><br>
+    <div class="page">
+      <div class="buttons">
+        <button type="button" class="button wbut" id="button1">Wood</button>
+        <button type="button" class="button sbut" id="button2">Sturdy Wood</button>
+        <button type="button" class="button dbut" id="button3">Dense Wood</button>
+      </div>
+      <div class="toggles">
+        <input type="checkbox" class="cbb" id="woodgen"></input>
+        <label for="woodgen" class="cbb" id="woodgenlb">Toggle Wood Gen</label><br>
+        <input type="checkbox" class="cbb" id="sturdygen"></input>
+        <label for="sturdygen" class="cbb" id="sturdygenlb">Toggle Sturdy Gen</label><br>
+        <input type="checkbox" class="cbb" id="densegen"></input>
+        <label for="densegen" class="cbb" id="densegenlb">Toggle Dense Gen</label>
+      </div>
+      <div class="resources">
+        <p class="reslab restop" >Wood</p><p class="res restop" id="val1">0</p><br>
+        <p class="reslab" >Sturdy Wood</p><p class="res" id="val2">0</p><br>
+        <p class="reslab" >Dense Wood</p><p class="res" id="val3">0</p><br>
+      </div>
+      <div class="shop">
+        <button type="button" id="buywoodgen">Buy Wood Gen (10 wood)</button><br>
+        <button type="button" id="buysturdygen">Buy Sturdy Gen (10 sturdy wood)</button><br>
+        <button type="button" id="buydensegen">Buy Dense Gen (10 dense wood)</button>
+      </div>
+      <p id="extra1"></p><br>
+      <p id="extra2"></p><br>
+      <p id="extra3"></p><br> 
+      <p>//todo<br>
+      • make page look good<br>
+      • add more stuff<br>
+      • add more ui stuff<br></p>
     </div>
-    <div class="shop">
-      <button type="button" id="buywoodgen">Buy Wood Gen (10 wood)</button><br>
-      <button type="button" id="buysturdygen">Buy Sturdy Gen (10 sturdy wood)</button><br>
-      <button type="button" id="buydensegen">Buy Dense Gen (10 dense wood)</button>
-    </div>
-    <p id="extra1"></p><br>
-    <p id="extra2"></p><br>
-    <p id="extra3"></p><br>
-    <p>//todo<br>
-    • make page look good<br>
-    • add more stuff<br>
-    • add more ui stuff<br>
-    • make page work again</p>
     <script src="button.js"></script>
   </body>
 </html>
