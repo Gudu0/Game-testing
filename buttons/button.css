@@ -5,6 +5,10 @@ h1{
   text-align:center;
   margin-top:20px;
 }
+.page{
+  position:absolute;
+  top:50px;
+}
 .resources{
   border:2px solid #615d5f;
   background-color:#615d5f;
