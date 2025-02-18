@@ -1,6 +1,6 @@
-/* *{
+*{
   box-sizing:border-box;
-} */
+}
 body{
   background-color: #8a8588;
 }
@@ -8,9 +8,6 @@ h1{
   text-align:center;
   margin-top:20px;
 }
-/* div{
-  border:2px dashed blue;
-} */
 .resources{
   border:2px solid #615d5f;
   background-color:#615d5f;
