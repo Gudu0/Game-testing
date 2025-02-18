@@ -37,9 +37,12 @@ h1{
   cursor:pointer;
   padding: 3px 5px;
 }
-.wbut{background-color:#4f4331;}
-.sbut{background-color:#383227;}
-.dbut{background-color:#1c1814;}
+.wbut, wgbut{background-color:#4f4331;}
+.sbut, sgbut{background-color:#383227;}
+.dbut, dgbut{background-color:#1c1814;}
+.wgbut{}
+.sgbut{}
+.dgbut{}
 
 .restop{
   margin-top:2px;
