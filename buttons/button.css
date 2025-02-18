@@ -40,7 +40,7 @@ h1{
 .wbut, .wgbut{background-color:#4f4331;}
 .sbut, .sgbut{background-color:#383227;}
 .dbut, .dgbut{background-color:#1c1814;}
-.wgbut{}
+.wgbut{width:100px;}
 .sgbut{}
 .dgbut{}
 
