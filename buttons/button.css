@@ -43,9 +43,9 @@ h1{
 .wbut, .wgbut{background-color:#4f4331;}
 .sbut, .sgbut{background-color:#383227;}
 .dbut, .dgbut{background-color:#1c1814;}
-.wgbut{width:100px;}
-.sgbut{}
-.dgbut{}
+.wgbut{width:100%;}
+.sgbut{width:100%;}
+.dgbut{width:100%;}
 
 .restop{
   margin-top:2px;
