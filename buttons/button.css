@@ -5,12 +5,9 @@ h1{
   text-align:center;
   margin-top:20px;
 }
-div{
+/* div{
   border:2px dashed blue;
-}
-.page{
-/*   position:absolute; */
-}
+} */
 .resources{
   border:2px solid #615d5f;
   background-color:#615d5f;
